@@ -1,0 +1,14 @@
+{
+  "name": "Royal-Bot",
+  "version": "12.0.0",
+  "description": "Hi! I am Royal Bot, a Discord Bot for Server is a Moderation Bot and more!. ",
+  "main": "src/indec.ts",
+  "author": "JohnDavid",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "eris": "^0.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
