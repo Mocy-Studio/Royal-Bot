@@ -33,7 +33,13 @@ cd Royal-Bot
 npm install
 ```
 
-4. Set up your environment variables:
+4. Build the codes
+
+```bash
+npm run start:bot or npm start:bot
+```
+
+5. Set up your environment variables:
 
 Create a `.env` file in the root directory of your project with the following variables:
   
@@ -48,7 +54,7 @@ DATABASE_URL="mongodb+srv://David:xxxxxxxxxxxx" # Your MongoDB URL
 
 ```
 
-5. Generate the Prisma client:
+6. Generate the Prisma client:
 
 **If you using replit than read this:**
 
@@ -67,13 +73,13 @@ generator client {
   npx prisma generate
 ```
 
-6. Run the bot:
+7. Run the bot:
   
   ```bash
   npm run start or npm start
 ```
 
-7. Invite the bot to your server:
+8. Invite the bot to your server:
 
 Generate an invite link for your bot and invite it to your server using the Discord Developer Portal.
 
