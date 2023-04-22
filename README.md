@@ -27,4 +27,4 @@ Your contribution will be reviewed by the project maintainers, and any necessary
 
 ## 🔐 License
 
-Distributed under the Apache-2.0 license License. See ![LICENSE](https://img.shields.io/github/license/Mocy-Studio/Royal-Bot?style=socia) for more information.
+Distributed under the Apache-2.0 license License. See ![LICENSE](https://img.shields.io/github/license/Mocy-Studio/Royal-Bot?style=social) for more information.
