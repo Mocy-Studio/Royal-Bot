@@ -15,7 +15,7 @@ Before starting with the installation, you need to have the following:
 
 ## 📜 Contributing
 
-Thank you for your interest in contributing to Lavamusic! Here are some guidelines to follow when contributing:
+Thank you for your interest in contributing to Royal Bot! Here are some guidelines to follow when contributing:
 
 1. Fork the repository and create a new branch for your feature or bug fix.
 2. Write clean and concise code that follows the established coding style.
