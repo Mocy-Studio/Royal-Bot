@@ -1,14 +1,37 @@
 {
   "name": "Royal-Bot",
   "version": "12.0.0",
-  "description": "Hi! I am Royal Bot, a Discord Bot for Server is a Moderation Bot and more!. ",
-  "main": "src/indec.ts",
-  "author": "JohnDavid",
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "eris": "^0.17.1"
+  "description": "Hi! I am Royal Bot, a Discord Bot for Server is a Moderation Bot and more!.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run start:bot",
+    "start:bot": "npm run build && node --enable-source-maps dist/index.js",
+    "build": "tsc --project tsconfig.json"
   },
+  "author": "JohnDavid",
+  "license": "GPL-3.0",
   "devDependencies": {
-    "@types/node": "^18.11.18"
+    "@types/node": "^18.14.5",
+    "@types/signale": "^1.4.4",
+    "prisma": "^4.11.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "shoukaku": "^3.3.1",
+    "signale": "^1.4.0"
+  },
+  "signale": {
+    "displayScope": true,
+    "displayBadge": true,
+    "displayDate": true,
+    "displayFilename": true,
+    "displayLabel": true,
+    "displayTimestamp": true,
+    "underlineLabel": true
   }
 }
