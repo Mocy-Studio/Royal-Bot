@@ -1,7 +1,7 @@
-import { Command, RoyalClient, Context } from '../../structures/index.js';
+import { Command, RoyalBot, Context } from '../../structures/index.js';
 
 export default class Ping extends Command {
-  constructor(client: RoyalClient) {
+  constructor(client: RoyalBot) {
     super(client, {
       name: 'ping',
       description: {
@@ -22,7 +22,7 @@ export default class Ping extends Command {
       options: [],
     });
   }
-  public async run(client: RoyalClient, ctx: Context, args: string[]): Promise<void> {
+  public async run(client: RoyalBot, ctx: Context, args: string[]): Promise<void> {
     const msg = await ctx.sendDeferMessage('Pinging...');
 
     const embed = client

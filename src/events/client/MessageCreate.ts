@@ -1,8 +1,8 @@
-import { Event, RoyalClient, Context } from '../../structures/index.js';
+import { Event, RoyalBot, Context } from '../../structures/index.js';
 import { Message, PermissionFlagsBits, Collection, ChannelType } from 'discord.js';
 
 export default class MessageCreate extends Event {
-  constructor(client: RoyalClient, file: string) {
+  constructor(client: RoyalBot, file: string) {
     super(client, file, {
       name: 'messageCreate',
     });

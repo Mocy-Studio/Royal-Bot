@@ -1,8 +1,8 @@
-import RoyalClient from './RoyalClient.js';
+import RoyalBot from './RoyalBot.js';
 import { ApplicationCommandOption, PermissionResolvable } from 'discord.js';
 
 export default class Command {
-  public client: RoyalClient;
+  public client: RoyalBot;
   public name: string;
   public nameLocalizations: any;
   public description: {
@@ -22,7 +22,7 @@ export default class Command {
   public slashCommand: boolean;
   public options: ApplicationCommandOption[];
   public category: string | null;
-  constructor(client: RoyalClient, options: CommandOptions) {
+  constructor(client: RoyalBot, options: CommandOptions) {
     this.client = client;
     this.name = options.name;
     this.nameLocalizations = options.nameLocalizations;
@@ -46,7 +46,7 @@ export default class Command {
     this.options = options.options || [];
     this.category = options.category || 'general';
   }
-  public async run(client: RoyalClient, message: any, args: string[]) {
+  public async run(client: RoyalBot, message: any, args: string[]) {
     return Promise.resolve();
   }
 }

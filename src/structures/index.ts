@@ -1,9 +1,9 @@
 import Event from './Event.js';
 import Command from './Command.js';
-import RoyalClient from './RoyalClient.js';
+import RoyalBot from './RoyalBot.js';
 import Context from './Context.js';
 
-export { Event, Command, RoyalClient, Context };
+export { Event, Command, RoyalBot, Context };
 
 /**
  * Project: royal-bot

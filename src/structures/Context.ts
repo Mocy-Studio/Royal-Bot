@@ -9,7 +9,7 @@ import {
     GuildChannel,
     User,
   } from 'discord.js';
-  import { RoyalClient } from './index.js';
+  import { RoyalBot } from './index.js';
   
   export default class Context {
     public ctx: CommandInteraction | Message;
@@ -18,7 +18,7 @@ import {
     public message: Message | null;
     public id: string;
     public channelId: string;
-    public client: RoyalClient;
+    public client: RoyalBot;
     public author: User | null;
     public channel: GuildChannel | TextChannel | null;
     public guild: Guild | null;

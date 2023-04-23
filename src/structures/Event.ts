@@ -1,12 +1,12 @@
-import RoyalClient from './RoyalClient.js';
+import RoyalBot from './RoyalBot.js';
 
 export default class Event {
-  public client: RoyalClient;
+  public client: RoyalBot;
   public one: boolean;
   public file: string;
   public name: string;
   public fileName: string;
-  constructor(client: RoyalClient, file: string, options: EventOptions) {
+  constructor(client: RoyalBot, file: string, options: EventOptions) {
     this.client = client;
     this.file = file;
     this.name = options.name;

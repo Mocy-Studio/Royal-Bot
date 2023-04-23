@@ -1,7 +1,7 @@
-import { Event, Lavamusic } from '../../structures/index.js';
+import { Event, RoyalBot } from '../../structures/index.js';
 import { ActivityType } from 'discord.js';
 export default class Ready extends Event {
-  constructor(client: Lavamusic, file: string) {
+  constructor(client: RoyalBot, file: string) {
     super(client, file, {
       name: 'ready',
     });

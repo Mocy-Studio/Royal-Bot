@@ -1,4 +1,4 @@
-import Royalbot from './structures/Royalbot.js';
+import RoyalBot from './structures/RoyalBot.js';
 import { ClientOptions, GatewayIntentBits } from 'discord.js';
 import config from './config.js';
 const { GuildMembers, MessageContent, GuildVoiceStates, GuildMessages, Guilds, GuildMessageTyping } = GatewayIntentBits;
@@ -10,7 +10,7 @@ const clientOptions: ClientOptions = {
     },
 };
 
-const client = new Royalbot(clientOptions);
+const client = new RoyalBot(clientOptions);
 
 client.start(config.token);
 

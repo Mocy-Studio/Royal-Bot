@@ -19,7 +19,7 @@ import {
   
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
   
-  export default class Lavamusic extends Client {
+  export default class RoyalBot extends Client {
 	public commands: Collection<string, any> = new Collection();
 	public aliases: Collection<string, any> = new Collection();
 	public prisma = new PrismaClient();
@@ -46,7 +46,6 @@ import {
 		  this.logger.error(`Unable to connect to the database!`);
 		  this.logger.error(err);
 		});
-	  loadPlugins(this);
 	  return await this.login(token);
 	}
   
