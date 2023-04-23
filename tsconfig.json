@@ -1,26 +1,28 @@
 {
     "compilerOptions": {
-        "experimentalDecorators": true,
-        "target": "esnext",
-        "watch": true,
-        "module": "commonjs",
+        "target": "es2021",
+        "module": "es2022",
         "lib": [
-            "es5", "es6", "dom", "dom.iterable"
+            "es2021"
         ],
-        "allowJs": true,
-        "strict": true,
-        "noImplicitAny": true,
-        "skipLibCheck": true,
-        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": false,
+        "moduleResolution": "node",
         "esModuleInterop": true,
-        "resolveJsonModule": true,
-        "typeRoots": [
-            "node_modules/@types",
-            "src/typings"
-        ],
-        "rootDir": "src",
-        "outDir": "dist"
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
+        "importHelpers": true,
+        "forceConsistentCasingInFileNames": true
     },
-    "include": ["src/**/*.ts","src/**/*.json"],
-    "exclude": ["node_modules/**"]
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules",
+    ]
 }
