@@ -11,6 +11,18 @@ export default {
     yellow: 0xffff00,
     main: 0x2f3136,
   },
+  links: {
+    invite: "https://discord.gg/",
+    support: "https://discord.gg/",
+  },
+  hooks: {
+    guildAdd: {
+      url: "https://discord.com/api/webhooks/"
+    },
+    guildRemove: {
+      url: "https://discord.com/api/webhooks/"
+    },
+  },
   owners: process.env.OWNERS?.split(','),
   database: process.env.DATABASE_URL,
   clientId: process.env.CLIENT_ID,
